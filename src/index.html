@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="truc">
+      <div
+        class="postit bleu"
+        is="draggable-box"
+        container=".truc"
+        handle=".handle"
+      >
+        <div slot="content">
+          <div class="handle">handle</div>
+          <p>boite 2</p>
+        </div>
+      </div>
+
+      <div class="postit" is="draggable-box" container=".truc" handle=".handle">
+        <div slot="content">
+          <div class="handle">handle</div>
+          <p>boite 1</p>
+        </div>
+      </div>
+
+      <div class="postit" is="draggable-box" container=".truc">
+        <div slot="content">
+          <p>boite 3</p>
+        </div>
+      </div>
+      <div class="postit" is="draggable-box">
+        <div slot="content">
+          <p>boite</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
